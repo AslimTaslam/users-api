@@ -1,0 +1,18 @@
+CREATE DATABASE apiusers;
+
+CREATE TABLE users(
+	id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+  name VARCHAR(100) NOT NULL,
+  age INT NOT NULL,
+  nationality VARCHAR(100) NOT NULL,
+  marriageStatus VARCHAR(100) NOT NULL,
+  children BOOLEAN NOT NULL,
+  fromAge INT NOT NULL,
+  tillAge INT NOT NULL,
+  telegram VARCHAR(200),
+  phoneNumber VARCHAR(100),
+  city VARCHAR(200) NOT NULL,
+  country VARCHAR(200) NOT NULL,
+  moreInfo VARCHAR NOT NULL,
+  moderated BOOLEAN DEFAULT false NOT NULL
+);
